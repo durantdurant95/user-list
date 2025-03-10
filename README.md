@@ -13,7 +13,7 @@ This application is hosted on [Vercel](https://vercel.com) for easy access.
 
 ## Live Demo
 
-Visit the live application at: [https://user-management-system.vercel.app](https://user-management-system.vercel.app) (replace with your actual Vercel deployment URL)
+Visit the live application at: [https://user-list-mu-pearl.vercel.app](https://user-list-mu-pearl.vercel.app) (replace with your actual Vercel deployment URL)
 
 ## Installation
 
