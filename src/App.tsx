@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import "./App.css";
 import UserList from "./componets/UserList";
+import UserForm from "./componets/userForm";
+import { User } from "./types";
 
 const App: React.FC = () => {
-  // Sample user data
-  const users = [
-    { name: "John Doe" },
-    { name: "Alice Smith" },
-    { name: "Bob Johnson" },
-    { name: "Emma Wilson" },
-    { name: "Michael Brown" },
-  ];
+  // Initialize with empty users array
+  const [users, setUsers] = useState<User[]>([]);
+
+  // Function to add a new user
+  const addUser = (user: User) => {
+    setUsers([...users, user]);
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 py-8">
@@ -18,6 +20,7 @@ const App: React.FC = () => {
           User Management System
         </h1>
 
+        <UserForm addUser={addUser} />
         <UserList users={users} />
 
         <div className="mt-8 text-center text-sm text-gray-500">
