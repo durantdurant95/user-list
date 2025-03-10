@@ -1,6 +1,7 @@
 # User Management System
 
 A simple React application for managing user records with a clean, responsive UI built with Tailwind CSS.
+This application is hosted on [Vercel](https://vercel.com) for easy access.
 
 ## Features
 
@@ -9,6 +10,10 @@ A simple React application for managing user records with a clean, responsive UI
 - 🗑️ Delete users from the list
 - ✨ Responsive design with Tailwind CSS
 - 🔔 Success and error notifications for user feedback
+
+## Live Demo
+
+Visit the live application at: [https://user-management-system.vercel.app](https://user-management-system.vercel.app) (replace with your actual Vercel deployment URL)
 
 ## Installation
 
@@ -50,6 +55,7 @@ bun dev
 - **React** - UI library
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Styling and responsive design
+- **Vercel** - Deployment and hosting platform
 
 ## Project Structure
 
@@ -74,6 +80,23 @@ user-list/
 - Click "Add user" to add the user to the list.
 - The user will appear in the list below, sorted alphabetically by name.
 - To delete a user, click the "Delete" button next to their entry.
+
+## Deployment
+
+This project is deployed on Vercel's hosting platform, providing:
+
+- Automatic deployments from your Git repository
+- Preview deployments for pull requests
+- Custom domain support
+- Global CDN for fast loading
+
+To deploy your own version:
+
+1. Fork this repository
+2. Create a Vercel account if you don't have one
+3. Import your forked repository to Vercel
+4. Configure your deployment settings
+5. Deploy!
 
 ## Future improvements
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
+import UserForm from "./componets/UserForm";
 import UserList from "./componets/UserList";
-import UserForm from "./componets/userForm";
 import { User } from "./types";
 
 const App: React.FC = () => {
