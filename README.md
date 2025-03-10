@@ -1,54 +1,91 @@
+# User Management System
+
+A simple React application for managing user records with a clean, responsive UI built with Tailwind CSS.
+
+## Features
+
+- ✅ Add new users with name and email information
+- 📋 Display users in an alphabetically sorted list
+- 🗑️ Delete users from the list
+- ✨ Responsive design with Tailwind CSS
+- 🔔 Success and error notifications for user feedback
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone [your-repo-url]
+cd user-list
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+4. The application should now be running at `http://localhost:5173`
+
+## Technologies Used
+
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling and responsive design
+
+## Project Structure
+
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```markdown
+user-list/
+├── src/
+│ ├── components/
+│ │ ├── UserForm.tsx # Form to add new users
+│ │ └── UserList.tsx # Component to display users
+│ ├── App.tsx # Main application component
+│ ├── types.ts # TypeScript type definitions
+│ └── ...
+├── public/
+└── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How to use
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Fill in the "Name" and "Email" fields in the form.
+- Click "Add user" to add the user to the list.
+- The user will appear in the list below, sorted alphabetically by name.
+- To delete a user, click the "Delete" button next to their entry.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Future improvements
+
+- User data persistence with local storage or a backend service
+- User editing functionality
+- Form validation for email format
+- Search and filter capabilities for the user list
+- Pagination for large user lists
+- User avatars or profile pictures
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+
+Created by Alejandro Perez Duran
